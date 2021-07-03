@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _directionOffset: {x: 0, y: -0.42, z: 0}
-  _lenght: 3.48
+  _lenght: 5
   _positionOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1400056380
 GameObject:
@@ -365,7 +365,7 @@ MonoBehaviour:
   _startPlatform: {fileID: 9007694873338994385, guid: e7f5fe189b6404c4780bda9b6ddb38a8,
     type: 3}
   _platforms:
-  - {fileID: 636157181306608901, guid: f30aee129ce28fe4380c1415a5d9546e, type: 3}
+  - {fileID: 4341524879987245085, guid: 7f7609e8f23465d458d89eccbfd99eb8, type: 3}
   - {fileID: 4341524879987245085, guid: 7f7609e8f23465d458d89eccbfd99eb8, type: 3}
   - {fileID: 1215908778014513829, guid: 0b81f630bcb6c0544b9d8c0ca6e0022d, type: 3}
   _additionalBeamHeight: 5

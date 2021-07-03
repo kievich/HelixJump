@@ -5,7 +5,7 @@ using UnityEngine;
 public class BallBounce : MonoBehaviour
 {
     private Rigidbody _rigidbody;
-    [SerializeField] private float _force;
+    [SerializeField] private float _velocity;
 
     private void Start()
     {
@@ -16,7 +16,7 @@ public class BallBounce : MonoBehaviour
 
         if (collision.gameObject.TryGetComponent<PlatformSegment>(out PlatformSegment platform))
         {
-            //_rigidbody.AddForce(0, _force, 0, ForceMode.Impulse);
+            _rigidbody.velocity = new Vector3(0, _velocity, 0);
 
         }
     }
