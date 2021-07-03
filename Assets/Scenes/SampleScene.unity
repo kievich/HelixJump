@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _directionOffset: {x: 0, y: -0.42, z: 0}
-  _lenght: 5
+  _lenght: 4
   _positionOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1400056380
 GameObject:
@@ -325,6 +325,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1400056381}
   - component: {fileID: 1400056382}
+  - component: {fileID: 1400056384}
   m_Layer: 0
   m_Name: tower
   m_TagString: Untagged
@@ -358,7 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec080b7587fb30547afeb5234a6ba1ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelCount: 100
+  _levelCount: 10
   _beam: {fileID: 1678100805047633313, guid: 3cda5bd64c878654593dfc8eeab8ce7f, type: 3}
   _endPlatform: {fileID: 1254221310622115182, guid: 5db328ceaa0963946a481bbb0fe0178f,
     type: 3}
@@ -370,6 +371,19 @@ MonoBehaviour:
   - {fileID: 1215908778014513829, guid: 0b81f630bcb6c0544b9d8c0ca6e0022d, type: 3}
   _additionalBeamHeight: 5
   _distancebetweenPlatform: 2
+--- !u!114 &1400056384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400056380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab7837af11fa614a8b42ebf71f42ac3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotateSpeed: 15
 --- !u!1 &1520333175
 GameObject:
   m_ObjectHideFlags: 0

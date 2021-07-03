@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Ball : MonoBehaviour
@@ -8,6 +9,11 @@ public class Ball : MonoBehaviour
     private void OnTriggerEnter(Collider PlatformTrigger)
     {
 
-        PlatformTrigger.GetComponentInParent<Platform>().Break();
+        if (PlatformTrigger.TryGetComponent<EndPlatform>(out EndPlatform endPlatform))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        else
+            PlatformTrigger.GetComponentInParent<Platform>().Break();
+
+
     }
 }

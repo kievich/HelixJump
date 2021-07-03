@@ -21,7 +21,7 @@ public class TowerBuilder : MonoBehaviour
     {
         Beam beam = Instantiate(_beam, Vector3.zero, Quaternion.identity, transform);
         float beamHeight = (_levelCount * _distancebetweenPlatform + _additionalBeamHeight) / 2f;
-        beam.transform.localScale = new Vector3(1f, beamHeight, 1f);
+        beam.transform.localScale = new Vector3(beam.transform.localScale.x, beamHeight, beam.transform.localScale.z);
         Vector3 _startPosition = beam.transform.position + new Vector3(0, (_levelCount * _distancebetweenPlatform - _additionalBeamHeight) / 2f - _distancebetweenPlatform, 0);
 
         SpawnPlatform(_startPlatform, transform, ref _startPosition);

@@ -16,7 +16,8 @@ public class BallBounce : MonoBehaviour
 
         if (collision.gameObject.TryGetComponent<PlatformSegment>(out PlatformSegment platform))
         {
-            _rigidbody.velocity = new Vector3(0, _velocity, 0);
+            if (platform.GetComponent<Rigidbody>().isKinematic)
+                _rigidbody.velocity = new Vector3(0, _velocity, 0);
 
         }
     }

@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3567266878727456007}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 4, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3874185497220306273}
   - {fileID: 527880640821292786}
@@ -68,7 +68,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e85486a548830bb429cf2f873f4eb540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bounceForce: 10000
   _ball: {fileID: 7749558885137881621, guid: 7803e041304db124eb98a8c46fde470c, type: 3}
   _spawnpoint: {fileID: 4809127930967773061}
 --- !u!64 &3408230255397155759
@@ -163,7 +162,7 @@ PrefabInstance:
     - target: {fileID: 3950240672055292405, guid: 946b10cde5ab0804a91269aa068f2cf9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.063
+      value: -0.163
       objectReference: {fileID: 0}
     - target: {fileID: 3950240672055292405, guid: 946b10cde5ab0804a91269aa068f2cf9,
         type: 3}
@@ -215,6 +214,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: trigger
       objectReference: {fileID: 0}
+    - target: {fileID: 4705060092472096490, guid: 946b10cde5ab0804a91269aa068f2cf9,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5845902237092445871, guid: 946b10cde5ab0804a91269aa068f2cf9,
         type: 3}
       propertyPath: _HoveredMaterial
@@ -235,7 +239,8 @@ PrefabInstance:
       propertyPath: _DisplayAllMaterial
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6843129089466697707, guid: 946b10cde5ab0804a91269aa068f2cf9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 946b10cde5ab0804a91269aa068f2cf9, type: 3}
 --- !u!4 &3101568167337263359 stripped
 Transform:
