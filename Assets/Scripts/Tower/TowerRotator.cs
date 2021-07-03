@@ -17,7 +17,6 @@ public class TowerRotator : MonoBehaviour
     {
         if (Input.touchCount > 0)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 1f);
             Touch touch = Input.touches[0];
             if (touch.phase == TouchPhase.Moved)
             {
