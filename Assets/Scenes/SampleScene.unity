@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -383,7 +383,7 @@ MonoBehaviour:
   _lenght: 4
   _positionOffset: {x: 0, y: 0.5, z: 0}
   _fallingLengthToTrack: 0.5
-  _timeToDownCamera: 0.3
+  _timeToDownCamera: 0.4
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0

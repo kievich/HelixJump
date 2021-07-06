@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
+
 using System;
 
 public class CameraBounce : MonoBehaviour
@@ -23,9 +23,9 @@ public class CameraBounce : MonoBehaviour
 
     IEnumerator doBounce()
     {
-        transform.DOMove(new Vector3(transform.position.x, transform.position.y - _moveLength, transform.position.z), _downMoveTime, false);
+        // transform.DOMove(new Vector3(transform.position.x, transform.position.y - _moveLength, transform.position.z), _downMoveTime, false);
         yield return new WaitForSeconds(_downMoveTime);
-        transform.DOMove(new Vector3(transform.position.x, transform.position.y + _moveLength, transform.position.z), _upMoveTime, false);
+        // transform.DOMove(new Vector3(transform.position.x, transform.position.y + _moveLength, transform.position.z), _upMoveTime, false);
 
     }
 

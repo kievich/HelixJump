@@ -110,9 +110,9 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 122
   m_CollisionDetection: 1
 --- !u!114 &7749558885137881621
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6b6f824bb1b52d4a84f4fda69f809ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _velocity: 7
+  _velocity: 5
 --- !u!114 &2019618478396721431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,4 +152,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f20bc99e9a8c314980416659ab828ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gravityScale: 2
+  _gravityScale: 1.5

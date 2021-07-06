@@ -46,7 +46,7 @@ public class BallTrack : MonoBehaviour
 
     public void PutDownCamera()
     {
-        transform.DOMoveY(transform.position.y - _fallingLengthToTrack, _timeToDownCamera);
+        transform.DOMoveY(transform.position.y - _fallingLengthToTrack, _timeToDownCamera).SetEase(Ease.OutExpo);
     }
 
     private void onBallFalling()

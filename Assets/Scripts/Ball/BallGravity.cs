@@ -21,5 +21,9 @@ public class BallGravity : MonoBehaviour
     {
         Vector3 gravity = _globalGravity * _gravityScale * Vector3.up;
         _rigidbody.AddForce(gravity, ForceMode.Force);
+        if (_rigidbody.velocity.y < -5f)
+        {
+            _rigidbody.velocity = new Vector3(0, -5f, 0);
+        }
     }
 }
