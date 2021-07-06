@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 2781322599000967834}
   - component: {fileID: 7527800046127695692}
   - component: {fileID: 8048499077037578463}
-  - component: {fileID: 6207068276118776155}
-  - component: {fileID: 4705060092472096490}
+  - component: {fileID: 660375661482962807}
   m_Layer: 0
   m_Name: 90deg
   m_TagString: Untagged
@@ -113,40 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfdce7327f989a344a0a720d068badb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6207068276118776155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4438792603203775311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58c194f3826ab0b429ddebb6e0fa5adf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GeometryShader: {fileID: 4800000, guid: 47ca8cc19e520064baecb98dc4e2eb9e, type: 3}
-  _HoveredMaterial: {fileID: 0}
-  _SelectedMaterial: {fileID: 0}
-  _OverlapMaterial: {fileID: 0}
-  _DisplayAllMaterial: {fileID: 0}
-  _ValidOverlapBuffer: 0
-  _ValidSelectedBuffer: 0
-  _ValidHoverBuffer: 0
-  _ValidDisplayAllBuffer: 0
-  SelectedColor: {r: 0, g: 1, b: 0, a: 1}
-  HoveredColor: {r: 0, g: 1, b: 1, a: 1}
-  OverlapColor: {r: 1, g: 0, b: 0, a: 1}
-  DisplayAllColor: {r: 0, g: 0, b: 1, a: 1}
-  SelectedSize: 0.01
-  HoveredSize: 0.01
-  OverlapSize: 0.01
-  DisplayAllSize: 0.005
-  DensityScale: 0.01
-  CommonScale: 1
-  UseDensityScale: 1
-  DisplayAllVertices: 0
---- !u!64 &4705060092472096490
+--- !u!64 &660375661482962807
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,4 +125,4 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 22dcca08f9ddc3f4a998479374ba6d52, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 10b11932f068ef341ad942124d0cc292, type: 2}

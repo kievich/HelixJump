@@ -4,15 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 [RequireComponent(typeof(Rigidbody))]
 public class Ball : MonoBehaviour
 {
-    private CameraBounce _camera;
 
-    private void Start()
-    {
-        _camera = FindObjectOfType<CameraBounce>();
-    }
+    [System.NonSerialized] public BallStates State = BallStates.Falling;
+
+    public event Action Fall;
 
     private void OnTriggerEnter(Collider PlatformTrigger)
     {
@@ -24,7 +23,7 @@ public class Ball : MonoBehaviour
         else
         {
             PlatformTrigger.GetComponentInParent<Platform>().Break();
-            _camera.CanCameraBounce = true;
+            Fall?.Invoke();
         }
     }
 }
