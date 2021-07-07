@@ -10,6 +10,6 @@ public class TimeScale : MonoBehaviour
     private void Start()
     {
         Time.timeScale = _scale;
-        Application.targetFrameRate = 60;
+
     }
 }

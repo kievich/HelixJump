@@ -9,10 +9,8 @@ public class PlatformSegment : MonoBehaviour
     {
         if (TryGetComponent<Rigidbody>(out Rigidbody rigidbody))
         {
-            Debug.Log("!");
             rigidbody.isKinematic = false;
             rigidbody.AddExplosionForce(100f, transform.position, 50f);
-            // rigidbody.gameObject.GetComponent<MeshCollider>().enabled = false;
             Destroy(gameObject, 1);
         }
     }

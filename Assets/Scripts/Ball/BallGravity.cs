@@ -6,8 +6,8 @@ using UnityEngine;
 public class BallGravity : MonoBehaviour
 {
     [SerializeField] private float _gravityScale = 1.0f;
-
     private float _globalGravity = -9.81f;
+    [SerializeField] private float _speedLimite = 8f;
 
     Rigidbody _rigidbody;
 
@@ -19,8 +19,8 @@ public class BallGravity : MonoBehaviour
 
     private void Update()
     {
-        if (_rigidbody.velocity.y < -8f)
-            _rigidbody.velocity = new Vector3(0, -8f, 0);
+        if (_rigidbody.velocity.y < -_speedLimite)
+            _rigidbody.velocity = new Vector3(0, -_speedLimite, 0);
 
     }
 
