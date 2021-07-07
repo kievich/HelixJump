@@ -17,13 +17,16 @@ public class BallGravity : MonoBehaviour
         _rigidbody.useGravity = false;
     }
 
+    private void Update()
+    {
+        if (_rigidbody.velocity.y < -8f)
+            _rigidbody.velocity = new Vector3(0, -8f, 0);
+
+    }
+
     private void FixedUpdate()
     {
         Vector3 gravity = _globalGravity * _gravityScale * Vector3.up;
         _rigidbody.AddForce(gravity, ForceMode.Force);
-        if (_rigidbody.velocity.y < -5f)
-        {
-            _rigidbody.velocity = new Vector3(0, -5f, 0);
-        }
     }
 }
